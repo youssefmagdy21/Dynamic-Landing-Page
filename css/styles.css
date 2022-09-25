@@ -275,6 +275,9 @@ section.active .landing__container::after {
   margin-bottom: 1.875rem;
   margin-right: 1.25rem;
 }
+.to-top-icon-div:hover {
+  cursor: pointer;
+}
 #to-top-icon {
   font-size: 50px;
   color: #fff;

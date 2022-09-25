@@ -103,14 +103,24 @@ function scrollToSection(event) {
   });
 }
 
-// Scroll to top of the page
-function toTopBtn() {
+// Show to top button
+function showToTopBtn() {
   const topBtn = document.querySelector(".to-top-icon-div");
   if (window.pageYOffset > 0.0) {
     topBtn.classList.remove("hide-to-top-button");
   } else {
     topBtn.classList.add("hide-to-top-button");
   }
+}
+
+// Scroll to top of the page smoothly
+function toTopBtn(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 // Activate dropdown menu
@@ -148,8 +158,11 @@ links.forEach((link) => {
 // Set sections as active
 document.addEventListener("scroll", activateSection);
 
-// to top button
-document.addEventListener("scroll", toTopBtn);
+// show to top button
+document.addEventListener("scroll", showToTopBtn);
+
+// to top button behaviour
+document.querySelector(".to-top-icon-div").addEventListener("click", toTopBtn);
 
 // Drop Down Menu
 activateDropDownMenu();
