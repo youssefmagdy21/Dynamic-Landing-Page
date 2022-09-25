@@ -17,6 +17,8 @@
 This project is to build a multisection landing page, with a dynamically updating navigation menu based on the amount of content that is added to the page.
 Also, to identify the section being viewed currently while scrolling through the page, and to scroll smoothly to the correct section when its link is clicked from the navigation menu.
 
+This project is part of the _Udacity Professional Front-End Web Development Nanodegree Program_
+
 ## Installation
 
 - A working browser on your device.
